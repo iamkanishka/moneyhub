@@ -1,6 +1,8 @@
 # MoneyHub
 
 [![Hex.pm](https://img.shields.io/badge/hex-money_hub-blueviolet)](https://hex.pm/packages/money_hub)
+[![Hex.pm](https://img.shields.io/hexpm/v/money_hub.svg)](https://hex.pm/packages/money_hub)
+[![Documentation](https://img.shields.io/badge/documentation-gray.svg)](https://hexdocs.pm/money_hub)
 
 A production-grade Elixir client for the [Moneyhub Open Finance API](https://docs.moneyhubenterprise.com/) -
 Open Banking account aggregation (AIS), payment initiation (PIS), data
