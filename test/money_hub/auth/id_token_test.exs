@@ -9,7 +9,9 @@ defmodule MoneyHub.Auth.IdTokenTest do
   @rsa_pem_path Path.expand("../../fixtures/rsa_key.pem", __DIR__)
 
   setup do
-    on_exit(fn -> :persistent_term.erase({MoneyHub.Auth.JWKS, "https://identity.example.com"}) end)
+    on_exit(fn ->
+      :persistent_term.erase({MoneyHub.Auth.JWKS, "https://identity.example.com"})
+    end)
 
     signing_jwk = PrivateKeyJWT.load_jwk!(@rsa_pem_path)
     {_, public_jwk_map} = signing_jwk |> JOSE.JWK.to_public() |> JOSE.JWK.to_map()
